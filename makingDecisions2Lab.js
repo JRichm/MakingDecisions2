@@ -228,23 +228,32 @@ switch (letterGrade) {
 console.log("\nPROBELM ELEVEN");
 
 // how many numbers do you want to count to?
-let countTo =100;
-let numArray = [];
+let countTo = 100;
 
-// init number array
 for (let i = 1; i <= countTo; i++){
-  if (i % 3 === 0 && i % 5 === 0) numArray.push([i, "devmountain"]);
-  else if (i % 3 === 0) numArray.push([i, "dev"]);
-  else if (i % 5 === 0) numArray.push([i, "moutain"]);
-  else numArray.push([i])
+  if (i % 3 === 0 && i % 5 === 0) console.log("Devmountain");
+  else if (i % 3 === 0) console.log("Dev");
+  else if (i % 5 === 0) console.log("mountain");
+  else console.log(i);
 }
 
-for (let x = 0; x < numArray.length; x++) {
-  let stringToPrint = ""
-  for (let y = 0; y < numArray[x].length; y++) {
-    stringToPrint += (numArray[x][y] + "\t");
-  }
-  console.log(stringToPrint); 
-}
+
+// let numArray = [];
+
+// // init number array
+// for (let i = 1; i <= countTo; i++){
+//   if (i % 3 === 0 && i % 5 === 0) numArray.push([i, "devmountain"]);
+//   else if (i % 3 === 0) numArray.push([i, "dev"]);
+//   else if (i % 5 === 0) numArray.push([i, "moutain"]);
+//   else numArray.push([i])
+// }
+
+// for (let x = 0; x < numArray.length; x++) {
+//   let stringToPrint = ""
+//   for (let y = 0; y < numArray[x].length; y++) {
+//     stringToPrint += (numArray[x][y] + "\t");
+//   }
+//   console.log(stringToPrint); 
+// }
 
 
